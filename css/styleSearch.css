@@ -83,9 +83,9 @@ ul {
 }
 
 a {
+    display: block;
+    padding: 10px;
     text-decoration: solid;
-    font-size: 15px;
-    font-weight: bold;
     color: #c2c2c2;
 }
 
@@ -96,7 +96,6 @@ a {
 li {
     box-sizing: border-box;
     margin-bottom: 3px;
-    padding: 10px;
     background: #EBEBED;
 }
 
@@ -108,16 +107,17 @@ li:hover a {
     color: #ec5a62;
 }
 
-li > img {
+li a > img {
     display: inline-block;
     vertical-align: middle;
     margin-right: 15px;
 }
 
-li img + h2 {
+img + h2 {
     display: inline-block;
     vertical-align: middle;
-    height: 100%;
+    font-size: 15px;
+    font-weight: bold;
     width: calc(100% - 70px); /*разберись как это работает*/
 }
 
