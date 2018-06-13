@@ -1,0 +1,128 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    background: #F1F1F1;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.centered {
+    margin: 0px auto;
+}
+
+.no-border-outline {
+    border: none;
+    outline: none;
+}
+
+form {
+    width: 70%;
+    margin: 50px auto;
+    color: blue;
+}
+
+.header-search {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 100%;
+    width: 93%;
+    font-size: 57px; 
+    font-weight: bold;
+    background: transparent;
+    color: #ec5a62;
+}
+
+::placeholder {
+    color: #c2c2c2;
+}
+
+input[type="image"] {
+    display: inline-block;
+    height: 55px;
+    vertical-align: top;
+    outline: none;
+}
+
+input[type="image"]:active {
+    outline: none;
+}
+
+main {
+    margin: 0px auto;
+    width: 70%;
+    height: 470px;
+    font-size: 0px;
+}
+
+section > h1 {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+section {
+    display: inline-block;
+    width: 30%;
+    font-size: 0px;
+}
+
+section > h1 {
+    color: #C2C2C2;
+}
+
+ul {
+    list-style: none;
+    font-weight: bold;
+    color: #c2c2c2;
+}
+
+a {
+    text-decoration: solid;
+    font-size: 15px;
+    font-weight: bold;
+    color: #c2c2c2;
+}
+
+.central-section {
+    margin: 0px 5%;
+}
+
+li {
+    box-sizing: border-box;
+    margin-bottom: 3px;
+    padding: 10px;
+    background: #EBEBED;
+}
+
+li:hover {
+    background: rgba(118,117,128,0.1);
+}
+
+li:hover a {
+    color: #ec5a62;
+}
+
+li > img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+li img + h2 {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    width: calc(100% - 70px); /*разберись как это работает*/
+}
+
+.rounded {
+    border-radius: 50%;
+}
+
+/* в хедере убери пробел межу инлайн-блоками! */
