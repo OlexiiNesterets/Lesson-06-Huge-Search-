@@ -4,8 +4,6 @@
 }
 
 html {
-    height: 100%;
-    width: 100%;
     background: #F1F1F1;
 }
 
@@ -17,21 +15,23 @@ body {
     margin: 0px auto;
 }
 
-.no-border-outline {
-    border: none;
-    outline: none;
+.zero-font-size {
+    font-size: 0px;
 }
 
 form {
     width: 70%;
     margin: 50px auto;
-    color: blue;
+}
+
+input {
+    border: none;
+    outline: none;
 }
 
 .header-search {
     display: inline-block;
     box-sizing: border-box;
-    height: 100%;
     width: 93%;
     font-size: 57px; 
     font-weight: bold;
@@ -42,6 +42,7 @@ form {
 ::placeholder {
     color: #c2c2c2;
 }
+
 
 input[type="image"] {
     display: inline-block;
@@ -55,42 +56,32 @@ input[type="image"]:active {
 }
 
 main {
-    margin: 0px auto;
     width: 70%;
-    height: 470px;
-    font-size: 0px;
 }
 
 section > h1 {
     font-size: 18px;
     padding-bottom: 10px;
+    color: #C2C2C2;
 }
 
 section {
     display: inline-block;
     width: 30%;
-    font-size: 0px;
 }
 
-section > h1 {
-    color: #C2C2C2;
+.central-section {
+    margin: 0px 5%;
 }
 
 ul {
     list-style: none;
-    font-weight: bold;
-    color: #c2c2c2;
 }
 
 a {
     display: block;
     padding: 10px;
-    text-decoration: solid;
     color: #c2c2c2;
-}
-
-.central-section {
-    margin: 0px 5%;
 }
 
 li {
@@ -113,16 +104,15 @@ li a > img {
     margin-right: 15px;
 }
 
+
 img + h2 {
     display: inline-block;
     vertical-align: middle;
     font-size: 15px;
     font-weight: bold;
-    width: calc(100% - 70px); /*разберись как это работает*/
+    width: 180px;
 }
 
 .rounded {
     border-radius: 50%;
 }
-
-/* в хедере убери пробел межу инлайн-блоками! */
